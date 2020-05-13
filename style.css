@@ -1,0 +1,100 @@
+.item1{grid-area: header; width: 10px;}
+.item2{grid-area: menu; justify-content: flex-end; display: flex;}
+.item3{grid-area: main; background-image: url("https://i.ibb.co/BwQH8FP/Illustration.png");background-repeat: no-repeat; background-size: cover; background-position: center;}
+.item4{grid-area: aboutus; background-image: url("https://i.ibb.co/cxTrM8q/Illustration2.png"); background-repeat: no-repeat; background-size: cover; background-position: center; height: 800px;}
+.item5{grid-area: Challenge;}
+
+.grid-container {
+  font-family: poppins;
+  display: grid;
+  grid-template-areas:
+    'header menu menu menu'
+    'main main main main'
+    'aboutus aboutus aboutus aboutus'
+    'challenge challenge challenge challenge';
+}
+
+.grid-container > div {
+  background-color: white;
+  text-align: center;
+  padding: 5px;
+  font-size: 1em;
+}
+
+.button {
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  padding: 10px;
+  font-size: 1.2em; 
+  color: black;
+  background-color: white;
+}
+
+.button:hover {
+  color: red;
+}
+
+* {box-sizing: border-box}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: 100px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-size: 18px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #fff;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  display: inline-block;
+}
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .next {font-size: 11px}
+}
+h1 {
+  color: #fff;
+  text-align: left;
+  padding-left: 50px;
+  padding-top: 60px;
+}
+h1, p{
+  font-family: poppins;
+}
+
+p{
+  font-size: 1.3em;
+  text-align: left;
+  padding-left: 50px;
+  padding-top: 180px;
+}
