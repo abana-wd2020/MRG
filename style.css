@@ -6,7 +6,7 @@
 
 .item6{grid-area: news;}
 
-.item7{grid-area: contact;}
+.item7{grid-area: contact;  background-image: url("https://i.ibb.co/BwQH8FP/Illustration.png"); background-repeat: no-repeat; background-size: cover; background-position: center; height: 800px;}
 
 .navbar {font-family: poppins; overflow: hidden;
 background-color: #fff; position: fixed; top: 0; width: 100%;}
@@ -114,8 +114,19 @@ button:hover {background-color: #f2736f; color: white; transition-duration: 0.4s
 
 .item4 > div > p {float: left; font-size: 1.3em; text-align: left; padding-left: 50px;}
 .item4 > div > p > img {float: right; width: 400px; padding-left: 20px;}
+.item4 > div > img:hoover{background-color: red}
 
 .item5 > div > p {float: left; font-size: 1.3em; text-align: left; padding-left: 50px;}
 .item5 > div > p > img {float: right; width: 200px; padding-left: 20px;}
 .item5 > button a{display: flex; justify-content: space-between;}
 .item6 > div > h1 {font-family: poppins; font-family: poppins; padding-left: 50px;}
+
+.foto{ width: 200px; height: 200px; object-fit: cover; -moz-border-radius: 180px; -webkit-border-radius: 180px; border-radius: 180px;}
+.btn{-moz-border-radius: 180px; -webkit-border-radius: 180px; border-radius: 180px;}
+
+
+footer {
+  text-align: center;
+  background-color: white;
+  color: white;
+}
