@@ -1,100 +1,121 @@
-.item1{grid-area: header; width: 10px;}
-.item2{grid-area: menu; justify-content: flex-end; display: flex;}
 .item3{grid-area: main; background-image: url("https://i.ibb.co/BwQH8FP/Illustration.png");background-repeat: no-repeat; background-size: cover; background-position: center;}
-.item4{grid-area: aboutus; background-image: url("https://i.ibb.co/cxTrM8q/Illustration2.png"); background-repeat: no-repeat; background-size: cover; background-position: center; height: 800px;}
-.item5{grid-area: Challenge;}
 
-.grid-container {
-  font-family: poppins;
-  display: grid;
+.item4{grid-area: aboutus;  background-repeat: no-repeat; background-size: cover; background-position: center; height: 800px;}
+
+.item5{grid-area: Challenge; background-image: url("https://i.ibb.co/BwQH8FP/Illustration.png"); background-repeat: no-repeat; background-size: cover; background-position: center; height: 800px;}
+
+.item6{grid-area: news;}
+
+.item7{grid-area: contact;}
+
+.navbar {font-family: poppins; overflow: hidden;
+background-color: #fff; position: fixed; top: 0; width: 100%;}
+
+.rosso:hover {color: red;}
+
+.navbar a{float: right; display: block; color: black;
+ text-align: center; padding: 20px; text-decoration: none;}
+
+img{float: left;}
+
+.grid-container {font-family: poppins; display: grid;
   grid-template-areas:
-    'header menu menu menu'
+    'menu menu menu menu'
     'main main main main'
     'aboutus aboutus aboutus aboutus'
-    'challenge challenge challenge challenge';
-}
+    'challenge challenge challenge challenge'
+    'news news news news'
+    'contact contact contact contact';}
 
-.grid-container > div {
-  background-color: white;
-  text-align: center;
-  padding: 5px;
-  font-size: 1em;
-}
+.grid-container > div {background-color: white;
+text-align: center; padding: 5px; font-size: 1em;}
 
-.button {
-  text-decoration: none;
-  display: inline-block;
-  border: none;
-  padding: 10px;
-  font-size: 1.2em; 
-  color: black;
-  background-color: white;
-}
 
-.button:hover {
-  color: red;
-}
+h1, h2 {color: #552f2f; text-align: left; padding-left: 50px; padding-top: 80px;}
 
-* {box-sizing: border-box}
+h1, p, h2{font-family: poppins;}
+
+
+
+* {box-sizing: border-box;}
+body {font-family: poppins, sans-serif;}
+.mySlides {display: none;}
 img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+   padding-top: 80px;
+  max-width: 500px;
   position: relative;
-  margin: 100px;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: black;
-  font-size: 18px;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: #fff;
-}
-
+  margin: auto;}
 
 /* The dots/bullets/indicators */
 .dot {
-  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
   display: inline-block;
+  transition: background-color 0.6s ease;
 }
 
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .next {font-size: 11px}
-}
-h1 {
-  color: #fff;
-  text-align: left;
-  padding-left: 50px;
-  padding-top: 60px;
-}
-h1, p{
-  font-family: poppins;
+  .text {font-size: 11px}
 }
 
-p{
-  font-size: 1.3em;
-  text-align: left;
-  padding-left: 50px;
-  padding-top: 180px;
+button a{text-decoration: none; color: white;}
+
+button {text-decoration: none; font-size: 1.2em; padding: 10px; border: none; background-color: black; font-size: 1.5em;  font-family: poppins; border-radius: 8px; color: white;}
+button:hover {background-color: #f2736f; color: white; transition-duration: 0.4s;}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
 }
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  } }
+
+.item4 > div > p {float: left; font-size: 1.3em; text-align: left; padding-left: 50px;}
+.item4 > div > p > img {float: right; width: 400px; padding-left: 20px;}
+
+.item5 > div > p {float: left; font-size: 1.3em; text-align: left; padding-left: 50px;}
+.item5 > div > p > img {float: right; width: 200px; padding-left: 20px;}
+.item5 > button a{display: flex; justify-content: space-between;}
+.item6 > div > h1 {font-family: poppins; font-family: poppins; padding-left: 50px;}
