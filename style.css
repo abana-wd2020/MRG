@@ -2,7 +2,7 @@
 
 .item4{grid-area: aboutus; background-image: url("https://github.com/abana-wd2020/MRG/blob/master/sfondo.png?raw=true"); background-repeat: no-repeat; background-size: cover; background-position: center; height: 600px;}
 
-.item5{grid-area: Challenge; background-image: url("https://github.com/abana-wd2020/MRG/blob/master/sfondo.png?raw=true"); background-repeat: no-repeat; background-size: cover; background-position: center; height: 800px;}
+.item5{grid-area: Challenge; background-image: url("https://github.com/abana-wd2020/MRG/blob/master/sfondo.png?raw=true"); background-repeat: no-repeat; background-size: cover; background-position: center; height: 900px;}
 
 .item6{grid-area: news;}
 
@@ -118,11 +118,11 @@ button:hover {background-color: #0066ff; color: white; transition-duration: 0.4s
 
 @media screen and (max-width:600px) {.column {width: 100%;} }
 
-.item4 > div > p {font-size: 1em; text-align: left; padding-left: 30px;}
-.item4 > div > p > img {float: right; width: 400px; padding-left: 20px; padding-right: 20px;}
-
-.item5 > div > p {float: left; font-size: 1em; text-align: left; padding-left: 50px;}
-.item5 > div > p > img {float: right; width: 300px; padding-left: 20px; padding-right: 30px;}
+.item4 > div > p {font-size: 1em; text-align: left; padding: 30px;}
+.item4 > div > p > img {float: right; width: 400px; padding: 20px;}
+.responsive {max-width: 100%; height: auto;}
+.item5 > div > p {float: left; font-size: 1em; text-align: left; padding: 30px;}
+.item5 > div > p > img {float: right; width: 300px; padding: 20px;}
 .item5 > button a{display: flex; justify-content: space-between;}
 .item6 > div > h1 {font-family: Verdana; padding-left: 50px;}
 
@@ -167,3 +167,5 @@ input[type=submit]:hover {
   border-radius: 5px;
   padding: 20px;
 }
+
+.challenge { padding: 30px;}
