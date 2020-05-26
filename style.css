@@ -1,17 +1,17 @@
-.item3{grid-area: main; background-image: url("https://github.com/abana-wd2020/MRG/blob/master/sfondo/sfondo.png?raw=true");background-repeat: no-repeat; background-size: cover; background-position: center; height: 100%;}
+.item3{grid-area: main; background-image: url("https://github.com/abana-wd2020/MRG/blob/master/sfondo/sfondo.png?raw=true");background-repeat: no-repeat; background-size: cover; background-position: center; width: 100%;}
 
-.item4{grid-area: aboutus; background-image: url("https://github.com/abana-wd2020/MRG/blob/master/sfondo/sfondo.png?raw=true"); background-repeat: no-repeat; background-size: cover; background-position: center; height: 100%}
+.item4{grid-area: aboutus; background-image: url("https://github.com/abana-wd2020/MRG/blob/master/sfondo/sfondo.png?raw=true"); background-repeat: no-repeat; background-size: cover; background-position: center; width: 100%;}
 
-.item5{grid-area: Challenge; background-image: url("https://github.com/abana-wd2020/MRG/blob/master/sfondo/sfondo.png?raw=true"); background-repeat: no-repeat; background-size: cover; background-position: center; height: 900px}
+.item5{grid-area: Challenge; background-image: url("https://github.com/abana-wd2020/MRG/blob/master/sfondo/sfondo.png?raw=true"); background-repeat: no-repeat; background-size: cover; background-position: center;  width: 100%;}
 
-.item6{grid-area: news; background-color: white; background-repeat: no-repeat; background-size: cover; background-position: center; height: 100%}
+.item6{grid-area: news; background-color: white; background-repeat: no-repeat; background-size: cover; background-position: center;  width: 100%;}
 
-.item7{grid-area: contact;  background-image: url("https://github.com/abana-wd2020/MRG/blob/master/sfondo/sfondo.png?raw=true"); background-repeat: no-repeat; background-size: cover; background-position: center; height: 100%}
+.item7{grid-area: contact;  background-image: url("https://github.com/abana-wd2020/MRG/blob/master/sfondo/sfondo.png?raw=true"); background-repeat: no-repeat; background-size: cover; background-position: center;  width: 100%;}
 
 /* Navbar */
-.topnav {font-family: Verdana; overflow: hidden; display: block; background-color: #fff; position: fixed; top: 0; width: 100%; z-index: 1;}
+.topnav {font-family: Verdana; overflow: hidden; display: block; background-color: #fff; position: fixed; top: 0; width: 100%; z-index: 1; }
 
-.topnav a {float: right; display: block; color: black; text-align: center; padding: 14px 16px; text-decoration: none;}
+.topnav a {float: right; display: block; color: black; text-align: center; padding-top: 20px; padding-right: 20px; text-decoration: none; font-size: 1.1em;}
 
 .topnav a:hover {
   color: #0066ff;
@@ -21,7 +21,7 @@
   display: none;
 }
 
-img{padding-lef: 20px;}
+img{padding-lef: 30px;}
 
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
@@ -59,37 +59,37 @@ img{padding-lef: 20px;}
 text-align: center; padding: 5px; font-size: 1em;}
 
 
-h1 {color: #990000; text-align: left; padding-left: 50px; padding-top: 80px; padding-bottom: 20px}
+h1 {color: #990000; text-align: center; padding-top: 70px; padding-bottom: 20px}
 
-h2 {color: #990000; text-align: left; padding-left: 5px; padding-top: 80px; padding-bottom: 20px}
+h2 {color: #990000; text-align: center; padding-top: 80px; padding-bottom: 20px}
 
-h1, p, h2{font-family: Verdana;}
+h1, p, h2{font-family: Futura,Trebuchet MS,Arial,sans-serif;}
 
  /* Button */
 button a {text-decoration: none; color: white;}
 
-button {text-decoration: none; font-size: 1em; padding: 10px; border: none; background-color: black; font-family: Verdana; border-radius: 8px; color: white;}
+button {text-decoration: none; font-size: 1em; padding: 10px; border: none; background-color: black; font-family: Verdana; border-radius: 8px; color: white; align: center;}
 
 button:hover {cursor: pointer; background-color: #0066ff; color: white; transition-duration: 0.4s;}
 
 /* Equal columns */
-.column {float: left; width: 33.33%; padding: 15px;}
+.column {float: left; width: 33%; padding: 15px;}
 
 .row:after {content: ""; display: table; clear: both;}
 
 @media screen and (max-width:600px) {.column {width: 100%;} }
 
-.item4 > div > p {font-size: 1em; text-align: left; padding: 30px;}
-.item4 > div > p > img {float: right; width: 400px; padding: 20px;}
+.item4 > div > p {font-size: 1em; padding: 30px; text-align: justify;}
+
 .responsive {max-width: 100%; height: auto;}
-.item5 > div > p {float: left; font-size: 1em; text-align: left; padding: 30px;}
-.item5 > div > p > img {float: right; width: 300px; padding: 20px;}
+.item5 > div > p { font-size: 1em; text-align: center; padding: 30px;}
+.item5 > div > p > img {float: center; width: 300px; padding: 20px;}
 .item5 > button a{display: flex; justify-content: space-between;}
-.item6 > div > h1 {font-family: Verdana; padding-left: 50px;}
+.item6 > div > h1 {font-family: Verdana;}
 
 
 .foto{ width: 200px; height: 200px; object-fit: cover; -moz-border-radius: 180px; -webkit-border-radius: 180px; border-radius: 180px;}
-.btn{-moz-border-radius: 180px; -webkit-border-radius: 180px; border-radius: 180px;}
+.btn{-moz-border-radius: 180px; -webkit-border-radius: 180px; border-radius: 180px; align: center;}
 
 
 footer {
@@ -130,21 +130,24 @@ input[type=submit]:hover {
   padding: 20px;
 }
 
-.challenge { padding: 30px;}
+.challenge { padding: 1px;}
 
 * {
   box-sizing: border-box;
 }
-.column1 {float: left; width: 50%; padding: 15px;}
+.column1 {float: left; width: 50%; padding: 20px; align: center;}
+.column12 {float: left; width: 43%; padding: 20px; align: center;}
+
 
 
 .row:after {content: ""; display: table; clear: both;}
 
 @media screen and (max-width:600px) {.column1 {width: 100%;} }
+@media screen and (max-width:600px) {.column12 {width: 100%;} }
 
 
 @media screen and (max-width: 600px) {
- .column1 {color: white;
+ .column12 {color: white;
   }
 }
 
@@ -186,7 +189,9 @@ input[type=submit]:hover {
 }
 
 .zoom:hover {
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.5); 
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); 
 }
+
+.challenge{ padding; 20px;}
