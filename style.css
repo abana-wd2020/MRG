@@ -1,30 +1,76 @@
-.item3{grid-area: main; background-image: url("https://github.com/abana-wd2020/MRG/blob/master/sfondo/sfondo.png?raw=true");background-repeat: no-repeat; background-size: cover; background-position: center; width: 100%;}
-
-.item4{grid-area: aboutus; background-image: url("https://github.com/abana-wd2020/MRG/blob/master/sfondo/sfondo.png?raw=true"); background-repeat: no-repeat; background-size: cover; background-position: center; width: 100%;}
-
-.item5{grid-area: Challenge; background-image: url("https://github.com/abana-wd2020/MRG/blob/master/sfondo/sfondo.png?raw=true"); background-repeat: no-repeat; background-size: cover; background-position: center;  width: 100%;}
-
-.item6{grid-area: news; background-color: white; background-repeat: no-repeat; background-size: cover; background-position: center;  width: 100%;}
-
-.item7{grid-area: contact;  background-image: url("https://github.com/abana-wd2020/MRG/blob/master/sfondo/sfondo.png?raw=true"); background-repeat: no-repeat; background-size: cover; background-position: center;  width: 100%;}
+.item3{
+  grid-area: main; 
+  background-image: url("https://github.com/abana-wd2020/MRG/blob/master/sfondo/sfondo.png?raw=true");
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: center;
+  width: 100%;
+}
+.item4{
+  grid-area: aboutus; 
+  background-image: url("https://github.com/abana-wd2020/MRG/blob/master/sfondo/sfondo.png?raw=true");
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: center; 
+  width: 100%;
+}
+.item5{
+  grid-area: Challenge; 
+  background-image: url("https://github.com/abana-wd2020/MRG/blob/master/sfondo/sfondo.png?raw=true"); 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: center; 
+  width: 100%;
+}
+.item6{
+  grid-area: news; 
+  background-color: white; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: center;  
+  width: 100%;
+}
+.item7{
+  grid-area: contact;  
+  background-image: url("https://github.com/abana-wd2020/MRG/blob/master/sfondo/sfondo.png?raw=true");
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: center;  
+  width: 100%;
+}
 
 /* Navbar */
-.topnav {font-family: Verdana; overflow: hidden; display: block; background-color: #fff; position: fixed; top: 0; width: 100%; z-index: 1; }
-
-.topnav a {float: right; display: block; color: black; text-align: center; padding-top: 20px; padding-right: 20px; text-decoration: none; font-size: 1.1em;}
-
+.topnav {
+  font-family: Verdana; 
+  overflow: hidden; 
+  display: block; 
+  background-color: #fff; 
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  z-index: 1;
+}
+.topnav a {
+  float: right; 
+  display: block; 
+  color: black; 
+  text-align: center; 
+  padding-top: 20px; 
+  padding-right: 20px; 
+  text-decoration: none; 
+  font-size: 1.1em;
+}
 .topnav a:hover {
   color: #0066ff;
 }
-
 .topnav .icon {
   display: none;
 }
 
-img{padding-lef: 30px;}
-
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
+  .topnav a:not(:first-child) {
+    display: none;
+  }
   .topnav a.icon {
     float: right;
     display: block;
@@ -32,7 +78,9 @@ img{padding-lef: 30px;}
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: fixed;}
+  .topnav.responsive {
+    position: fixed;
+  }
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
@@ -47,49 +95,123 @@ img{padding-lef: 30px;}
 }
 
 /* Grid container */
-.grid-container {font-family: poppins; display: grid;
+.grid-container {
+  display: grid;
   grid-template-areas:
     'main main main main'
     'aboutus aboutus aboutus aboutus'
     'challenge challenge challenge challenge'
     'news news news news'
-    'contact contact contact contact';}
+    'contact contact contact contact';
+}
+.grid-container > div {
+  background-color: white;
+  text-align: center; 
+  padding: 5px; 
+  font-size: 1em;
+}
 
-.grid-container > div {background-color: white;
-text-align: center; padding: 5px; font-size: 1em;}
 
-
-h1 {color: #990000; text-align: center; padding-top: 70px; padding-bottom: 20px}
-
-h2 {color: #990000; text-align: center; padding-top: 80px; padding-bottom: 20px}
-
-h1, p, h2{font-family: Futura,Trebuchet MS,Arial,sans-serif;}
+h1 {
+  color: #990000; 
+  text-align: center; 
+  padding-top: 80px; 
+  padding-bottom: 20px; 
+  font-size: 2em
+}
+h2 {
+  color: #990000; 
+  text-align: center; 
+  padding-top: 80px; 
+  padding-bottom: 20px
+}
+h1, p, h2{
+  font-family: Futura,Trebuchet MS,Arial,sans-serif;
+}
 
  /* Button */
-button a {text-decoration: none; color: white;}
+button a {
+  text-decoration: none; 
+  color: white;
+}
+button {
+  text-decoration: none; 
+  font-size: 1em; 
+  padding: 10px; 
+  border: none; 
+  background-color: black; 
+  font-family: Futura,Trebuchet MS,Arial,sans-serif; 
+  border-radius: 8px; 
+  color: white; 
+  box-align: center;}
 
-button {text-decoration: none; font-size: 1em; padding: 10px; border: none; background-color: black; font-family: Verdana; border-radius: 8px; color: white; align: center;}
-
-button:hover {cursor: pointer; background-color: #0066ff; color: white; transition-duration: 0.4s;}
+button:hover {
+  cursor: pointer; 
+  background-color: #0066ff; 
+  color: white; 
+  transition-duration: 0.4s;
+}
 
 /* Equal columns */
-.column {float: left; width: 33%; padding: 15px;}
+.column {
+  float: left; 
+  width: 33%; 
+  padding: 15px;
+}
+.row:after {
+  content: ""; 
+  display: table; 
+  clear: both;
+}
 
-.row:after {content: ""; display: table; clear: both;}
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  } 
+}
+@media screen and (max-width:600px) {
+  h1 {
+    font-size: 1.5em;
+  } 
+}
 
-@media screen and (max-width:600px) {.column {width: 100%;} }
+.item4 > div > p {
+  font-size: 1em; 
+  padding: 30px; 
+  text-align: justify;
+}
 
-.item4 > div > p {font-size: 1em; padding: 30px; text-align: justify;}
+.responsive {
+  max-width: 100%; 
+  height: auto;
+}
+.item5 > div > p {
+  font-size: 1em; 
+  text-align: center; 
+  padding: 30px;
+}
 
-.responsive {max-width: 100%; height: auto;}
-.item5 > div > p { font-size: 1em; text-align: center; padding: 30px;}
-.item5 > div > p > img {float: center; width: 300px; padding: 20px;}
-.item5 > button a{display: flex; justify-content: space-between;}
-.item6 > div > h1 {font-family: Verdana;}
+.item5 > button a{
+  display: flex; 
+  justify-content: space-between;
+}
 
 
-.foto{ width: 200px; height: 200px; object-fit: cover; -moz-border-radius: 180px; -webkit-border-radius: 180px; border-radius: 180px;}
-.btn{-moz-border-radius: 180px; -webkit-border-radius: 180px; border-radius: 180px; align: center;}
+
+.foto{
+  width: 200px; 
+  height: 200px; 
+  object-fit: cover; 
+  -moz-border-radius: 180px; 
+  -webkit-border-radius: 180px; 
+  border-radius: 180px;
+}
+.btn{
+  -moz-border-radius: 180px; 
+  -webkit-border-radius: 180px; 
+  border-radius: 180px; 
+  align: center;
+}
 
 
 footer {
@@ -98,7 +220,7 @@ footer {
   color: black;
 }
 
-body {font-family: Verdana;}
+
 * {box-sizing: border-box;}
 
 input[type=text], select, textarea {
@@ -130,29 +252,41 @@ input[type=submit]:hover {
   padding: 20px;
 }
 
-.challenge { padding: 1px;}
-
-* {
-  box-sizing: border-box;
+.column1 {
+  float: left; 
+  width: 50%; 
+  padding: 20px; 
+  align: center;}
+.column12 {
+  float: left; 
+  width: 43%; 
+  padding: 20px; 
+  align: center;
 }
-.column1 {float: left; width: 50%; padding: 20px; align: center;}
-.column12 {float: left; width: 43%; padding: 20px; align: center;}
+.row:after {
+  content: ""; 
+  display: table; 
+  clear: both;
+}
 
-
-
-.row:after {content: ""; display: table; clear: both;}
-
-@media screen and (max-width:600px) {.column1 {width: 100%;} }
-@media screen and (max-width:600px) {.column12 {width: 100%;} }
+@media screen and (max-width:600px) {
+  .column1 {
+    width: 100%;
+  } 
+}
+@media screen and (max-width:600px) {
+  .column12 {width: 100%;} }
 
 
 @media screen and (max-width: 600px) {
- .column12 {color: white;
+ .column12 {
+   color: white;
   }
 }
 
 @media screen and (max-width: 600px) {
- .item4 p {color: white;
+ .item4 p {
+   color: white;
   }
 }
 
@@ -174,9 +308,6 @@ input[type=submit]:hover {
    display:block;
   }
 }
-
-.item{padding-top: 200px;}
-
 }
 
 .zoom {
@@ -195,3 +326,15 @@ input[type=submit]:hover {
 }
 
 .challenge{ padding; 20px;}
+
+.scroller {
+    height: 700px;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+@media screen and (max-width:600px) {.scroller {width: 100%;} }
+
+.scroller section {
+    scroll-snap-align: start;
+}
