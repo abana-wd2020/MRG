@@ -41,7 +41,7 @@
 
 /* Navbar */
 .topnav {
-  font-family: Verdana; 
+  font-family: Futura,Trebuchet MS,Arial,sans-serif; 
   overflow: hidden; 
   display: block; 
   background-color: #fff; 
@@ -191,13 +191,6 @@ button:hover {
   padding: 30px;
 }
 
-.item5 > button a{
-  display: flex; 
-  justify-content: space-between;
-}
-
-
-
 .foto{
   width: 200px; 
   height: 200px; 
@@ -333,8 +326,20 @@ input[type=submit]:hover {
     scroll-snap-type: y mandatory;
 }
 
-@media screen and (max-width:600px) {.scroller {width: 100%;} }
+@media screen and (max-width:600px) {
+  .scroller {
+    height: 100%;} 
+}
 
 .scroller section {
     scroll-snap-align: start;
+}
+
+body {font-family: Futura,Trebuchet MS,Arial,sans-serif}
+
+.container1 {
+  max-width:600px;
+   margin:0 auto;
+  padding: 20px;
+  position: relative;
 }
