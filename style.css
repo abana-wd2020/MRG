@@ -104,7 +104,10 @@ p {
 .scroller {
     height: 700px;
     overflow-y: scroll;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y mandatory;}
+
+::-webkit-scrollbar {
+display: none;
 }
 
 .scroller section {
@@ -116,6 +119,7 @@ p {
     height: 100%;} 
 }
 
+
 .responsive {
   max-width: 100%; 
   height: auto;
@@ -125,7 +129,7 @@ p {
   p {text-size:1.1}}
 
 /* Navbar */
-.topnav {
+.topnav { 
   font-family: Futura,Trebuchet MS,Arial,sans-serif; 
   overflow: hidden; 
   display: block; 
@@ -142,7 +146,7 @@ p {
   color: black; 
   text-align: center; 
   padding-top: 20px; 
-  padding-right: 20px; 
+  padding-right: 35px; 
   text-decoration: none; 
   font-size: 1.1em;
 }
@@ -228,15 +232,9 @@ p {
   box-align: center;
   }
 
-.item5 > div > img{ 
-  max-width: 300px;
-  max-height: 300px;
-}
-
 p {
   text-align: justify;
 }
-
 
 @media screen and (max-width:600px) {
   .box1 {
